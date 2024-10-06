@@ -29,7 +29,7 @@ const SkillsPage = () => {
   ];
 
   // Function to render progress bar based on rating
-  const renderProgressBar = (rating) => {
+  const renderProgressBar = (rating: number) => {
     return (
       <div className="w-full bg-gray-300 rounded-full h-3">
         <div
