@@ -124,7 +124,7 @@ const ContactPage = () => {
                 <textarea
                   id="message"
                   name="message"
-                  rows="4"
+                  rows={4}
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
