@@ -15,7 +15,23 @@ body {
   overflow: auto;
   position: relative;
 }
+html {
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh; /* Ensure sections are tall enough */
+  padding: 20px; /* Add padding for better visibility */
+}
+
+
 .transition-width {
   transition: width 0.5s ease-in-out;
 }
+@media (min-width: 1024px) {
+  .responsive-svg {
+    width: 50%;
+    height: auto;
+  }
+}
+
 
