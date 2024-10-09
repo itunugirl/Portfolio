@@ -1,13 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isOpen, setIsOpen] = useState(false);
 
-  const sections = ['home', 'skills', 'works', 'education', 'contact'];
+  // Memoize the sections array to avoid reinitializing it on every render
+  const sections = useMemo(() => ['home', 'skills', 'works', 'education', 'contact'], []);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
