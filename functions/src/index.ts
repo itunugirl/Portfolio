@@ -10,8 +10,9 @@ const transporter = nodemailer.createTransport({
   service: "gmail", // Use your email service provider
   auth: {
     user: functions.config().gmail.email, // Your email from Firebase config
-    pass:
-    functions.config().gmail.password, // Your email password or app password
+    // Remove any trailing spaces in this line
+    pass: functions.config().gmail.password,
+
   },
 });
 
@@ -32,8 +33,8 @@ export const sendEmailNotification = functions.firestore
       from: functions.config().gmail.email, // Your email from Firebase config
       to: functions.config().gmail.email, // Change this to your admin email
       subject: "New Contact Form Submission",
-      text: `You have received a new message from ${data.name}
-       (${data.email}):\n\n${data.message}`,
+      text: `You have received a new message from 
+      ${data.name} (${data.email}):\n\n${data.message}`,
     };
 
     // Send email
