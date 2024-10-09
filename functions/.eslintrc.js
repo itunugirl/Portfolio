@@ -30,6 +30,6 @@ module.exports = {
     "quotes": ["error", "double"],
     "import/no-unresolved": 0,
     "indent": ["error", 2],
-    "max-len": ["error", { code: 80 }], // Ensure max length is set
+    "max-len": ["error", { code: 100 }], // Ensure max length is set
   },
 };

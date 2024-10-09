@@ -10,15 +10,13 @@ const transporter = nodemailer.createTransport({
   service: "gmail", // Use your email service provider
   auth: {
     user: functions.config().gmail.email, // Your email from Firebase config
-    // Remove any trailing spaces in this line
     pass: functions.config().gmail.password,
-
   },
 });
 
 // Trigger on new Firestore document creation
 export const sendEmailNotification = functions.firestore
-  .document("messages/{docId}")
+  .document("messages/{docId}") // This line remains unchanged.
   .onCreate(async (snap) => {
     const data = snap.data();
 
@@ -33,8 +31,7 @@ export const sendEmailNotification = functions.firestore
       from: functions.config().gmail.email, // Your email from Firebase config
       to: functions.config().gmail.email, // Change this to your admin email
       subject: "New Contact Form Submission",
-      text: `You have received a new message from 
-      ${data.name} (${data.email}):\n\n${data.message}`,
+      text: `You have received a new message from ${data.name} (${data.email}):\n\n${data.message}`,
     };
 
     // Send email
@@ -44,4 +41,4 @@ export const sendEmailNotification = functions.firestore
     } catch (error) {
       console.error("Error sending email:", error);
     }
-  }); // Ensure a newline at the end of this file
+  });
