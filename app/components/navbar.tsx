@@ -42,14 +42,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full font-libre-baskerville p-4 shadow bg-white z-10 transition-all duration-300 ${activeSection === 'home' ? 'bg-opacity-100' : 'bg-opacity-80'}`}>
+    <nav className={`fixed top-0 w-full font-libre-baskerville p-4 shadow bg-gradient-to-b from-gray-900 to-gray-800 bg-opacity-30 z-10 transition-all duration-300 ${activeSection === 'home' ? 'bg-opacity-100' : 'bg-opacity-80'}`}>
       <div className="mx-auto flex justify-between items-center max-w-full px-4">
-        <Link href="/" className="font-Libre-Baskerville text-black text-lg font-bold">
-          ADEKUNLE <span className='text-transparent bg-clip-text bg-coral'>ITUNUOLUWA</span>
+        <Link href="/" className="font-Libre-Baskerville text-white text-lg font-bold">
+          ADEKUNLE <span className='text-[gold]'>ITUNUOLUWA</span>
         </Link>
         <div className="flex items-center">
           <button
-            className="text-coral ml-4 lg:hidden focus:outline-none"
+            className="text-white ml-4 lg:hidden focus:outline-none"
             onClick={toggleMenu}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
@@ -76,7 +76,7 @@ const Navbar = () => {
               <Link
                 key={section}
                 href={`#${section}`}
-                className={`text-black font-Libre-Baskerville font-bold hover:text-transparent bg-clip-text bg-coral ${activeSection === section ? 'text-coral underline' : ''}`} // underline for active section
+                className={`text-white font-Libre-Baskerville font-bold hover:text-[gold] ${activeSection === section ? 'text-[#dfbd67] underline' : ''}`} // underline for active section
               >
                 {section.toUpperCase()}
               </Link>
@@ -92,14 +92,14 @@ const Navbar = () => {
         style={{
           maxWidth: '100%',
           borderRadius: '10px',
-          background: 'linear-gradient(135deg, rgba(230, 230, 250, 0.9), rgba(255, 204, 204, 0.9), rgba(255, 229, 180, 0.9))',
+          background: 'white',
         }}
       >
         {sections.map(section => (
           <Link
             key={section}
             href={`#${section}`}
-            className={`text-black font-Libre-Baskerville font-bold hover:text-transparent bg-clip-text bg-coral ${activeSection === section ? 'text-coral underline' : ''}`} // underline for active section
+            className={`text-black font-Libre-Baskerville font-bold hover:text-[#dfbd67] ${activeSection === section ? 'text-[gold] underline' : ''}`} // underline for active section
             onClick={() => setIsOpen(false)} // Close menu on link click
           >
             {section.toUpperCase()}

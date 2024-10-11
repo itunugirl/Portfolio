@@ -49,11 +49,11 @@ const SkillsPage = () => {
   };
 
   return (
-    <section id="skills" className="min-h-screen bg-orange bg-opacity-40 py-16 px-4 sm:px-8">
+    <section id="skills" className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 bg-opacity-40 py-16 px-4 sm:px-8">
       <div className="flex justify-center">
         <div className="w-full max-w-6xl">
           <h1
-            className="text-lg font-bold font-Libre-Baskerville text-gray-800 sm:text-lg mb-2"
+            className="text-lg font-bold font-Libre-Baskerville text-gray-200 sm:text-lg mb-2"
             data-aos="fade-up"
           >
             My Skills
@@ -61,7 +61,7 @@ const SkillsPage = () => {
           <div className="mb-4">
             <hr className="border-b-2 border-gray-300 mx-auto w-1/2" data-aos="fade-right" />
           </div>
-          <p className="text-lg text-gray-600 mb-8" data-aos="fade-right">
+          <p className="text-lg text-gray-400 mb-8" data-aos="fade-right">
             Here are my skills
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

@@ -20,20 +20,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        buttoncoral: {
-          DEFAULT: '#ff758c', // Main coral color
-          hover: '#ff7eb3',   // Hover state for coral
-        }, 
-        orange: '#FF6F61',
-        'educationbackground': '#F6AEAD',
-       
+        
         
       },
       backgroundImage: {
-        coral: 'linear-gradient(90deg, #ff758c 0%, #ff7eb3 100%)',
-        'main-color': 'linear-gradient(to bottom, #EDE7F6, #FF7F50)',
-        lavender: 'linear-gradient(to bottom, #D5C6E0, #FFE6E6)',
-        'educationbackground': '#F6AEAD',
+      
       },
       fontSize: {
         sm: ['14px', '20px'],

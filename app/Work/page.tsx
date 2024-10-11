@@ -68,14 +68,14 @@ const WorkPage = () => {
   }, []);
 
   return (
-    <section id="works" className="min-h-screen bg-gradient-to-r from-[#f3e5f5] via-[#e1bee7] to-[#f8bbd0] py-16 px-4">
+    <section id="works" className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-lg font-bold font-Libre-Baskerville text-gray-800 sm:text-lg mb-2" data-aos="fade-down">
+        <h1 className="text-lg font-bold font-Libre-Baskerville text-gray-200 sm:text-lg mb-2" data-aos="fade-down">
           My Works
         </h1>
         <hr className="border-b-2 border-gray-300 mx-auto w-1/2" data-aos="fade-right" />
 
-        <p className="text-lg text-gray-600 mb-8" data-aos="fade-right">
+        <p className="text-lg text-gray-400 mb-8" data-aos="fade-right">
           Here are some of my projects hosted on Vercel and Netlify:
         </p>
 
@@ -113,7 +113,7 @@ const WorkPage = () => {
         <div className="text-center mt-8" data-aos="zoom-in">
           <button
             onClick={() => setShowMore(!showMore)}
-            className="bg-buttoncoral text-white px-4 py-2 rounded hover:bg-buttoncoral-hover transition"
+            className="bg-white text-black px-4 py-2 rounded hover:bg-[#dfbd67] transition"
           >
             {showMore ? 'See Less' : 'See More'}
           </button>

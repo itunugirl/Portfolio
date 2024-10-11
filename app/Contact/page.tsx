@@ -57,26 +57,26 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <section id="contact" className="min-h-screen bg-gradient-to-r from-[#f3e5f5] via-[#e1bee7] to-[#f8bbd0] py-8 md:py-16 px-4">
+    <section id="contact" className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-8 md:py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="mb-10" data-aos="fade-up">
-          <h1 className="text-lg font-bold font-Libre-Baskerville text-gray-800 sm:text-lg mb-2">
+          <h1 className="text-lg font-bold font-Libre-Baskerville text-gray-200 sm:text-lg mb-2">
             Get in Touch!
           </h1>
           <div className="mb-4">
             <hr className="border-b-2 border-gray-300 mx-auto w-1/2" />
           </div>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-400 mb-8">
             I&apos;m always open to discussing new projects and opportunities. Leave a request below!
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="hidden md:flex flex-col justify-center items-start mb-4 md:mb-0" data-aos="fade-right">
-            <h1 className="text-lg font-bold text-gray-800 mb-4">
+            <h1 className="text-lg font-bold text-gray-200 mb-4">
               <span className='font-bold text-2xl'>You Need</span> <br /> a beautiful design for your website?
             </h1>
-            <p className="text-lg text-gray-600 mb-4">Leave a request and let&apos;s bring your vision to life!</p>
+            <p className="text-lg text-gray-400 mb-4">Leave a request and let&apos;s bring your vision to life!</p>
           </div>
 
           <div className="flex justify-center items-center my-4 md:block hidden" data-aos="fade-up">
@@ -135,7 +135,7 @@ const ContactPage = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className={`flex items-center bg-buttoncoral text-white px-4 py-2 rounded hover:bg-buttoncoral-hover transition ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={`flex items-center bg-[gold] text-black hover:bg-[#2c2b2b] hover:text-white px-4 py-2 rounded transition ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                   disabled={loading}
                 >
                   {loading ? 'Sending...' : 'Send Message'}
