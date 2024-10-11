@@ -12,7 +12,7 @@ const WorkPage = () => {
       title: 'Portfolio Website',
       description: 'A personal portfolio to showcase my skills and projects.',
       liveUrl: 'https://portfolio-g9hn.vercel.app',
-      imageUrl: 'https://i.postimg.cc/jd7PQhQB/portfolio-img.png',
+      imageUrl: 'https://i.postimg.cc/fbT1SYBp/portfolio-img.png',
       platform: 'Vercel',
     },
     {
