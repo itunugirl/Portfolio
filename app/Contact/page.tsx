@@ -113,7 +113,7 @@ const ContactPage = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="itunuoluwafelicia@gmail.com"
+                  placeholder="Your email here..."
                   className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
                   required
                   aria-label="Your email address"
@@ -135,7 +135,7 @@ const ContactPage = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className={`flex items-center bg-[gold] text-black hover:bg-[#2c2b2b] hover:text-white px-4 py-2 rounded transition ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={`flex items-center bg-[#A8D300] text-black hover:bg-[#2c2b2b] hover:text-white px-4 py-2 rounded transition ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                   disabled={loading}
                 >
                   {loading ? 'Sending...' : 'Send Message'}

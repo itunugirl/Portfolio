@@ -78,7 +78,7 @@ const EducationPage = () => {
         <p className="text-gray-400 mb-4">I&apos;m always open to networking and collaboration!</p>
         <a
           href="mailto:itunuoluwafelicia@gmail.com"
-          className="inline-block bg-[gold] text-black px-6 py-3 rounded-lg hover:bg-[#2c2b2b] hover:text-white transition duration-300 ease-in-out"
+          className="inline-block bg-[#A8D300] text-black px-6 py-3 rounded-lg hover:bg-[#2c2b2b] hover:text-white transition duration-300 ease-in-out"
         >
           Contact Me
         </a>

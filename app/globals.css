@@ -12,11 +12,12 @@
 body {
   font-family: 'Bree Serif', 'Libre Baskerville', 'Playfair Display', 'Roboto Condensed', 'Edu AU VIC WA NT Guides', sans-serif; /* Corrected font names */
   min-height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden
 }
 section {
   min-height: 100vh; /* Ensure sections are tall enough */

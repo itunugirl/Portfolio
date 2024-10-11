@@ -52,7 +52,7 @@ const HeroSection = () => {
       <div className="lg:w-1/2 text-center lg:text-left z-10" data-aos="fade-right">
         <h1 className="text-xl lg:text-2xl font-bold font-Libre-Baskerville text-white mb-4">{displayedText}</h1>
         <p className="text-base lg:text-lg text-white mb-6">
-          I&apos;m a <span className="font-bold text-[gold]">Front-End Software Engineer</span> passionate about creating elegant and functional user interfaces.
+          I&apos;m a <span className="font-bold text-[#A8D300]">Front-End Software Engineer</span> passionate about creating elegant and functional user interfaces.
         </p>
 
         {/* Social Media Links */}
@@ -72,15 +72,15 @@ const HeroSection = () => {
               aria-label={link.label}
               className="social-icon"
             >
-              <FontAwesomeIcon icon={link.icon} className="text-xl transition-all duration-300 hover:text-[#dfbd67]" />
+              <FontAwesomeIcon icon={link.icon} className="text-xl transition-all duration-300 hover:text-[#A8D300]" />
             </a>
           ))}
         </div>
 
         {/* Buttons */}
         <div className="flex lg:justify-start justify-center space-x-4" data-aos="fade-up">
-          <a href="/Contact" className="bg-white text-[black] px-6 py-2 rounded hover:bg-[#dfbd67] hover:text-black transition">Hire Me</a>
-          <a href="/Miss-Itunuoluwa-Adekunle-FlowCV-Resume-20241002.pdf" download className="bg-[gold] text-black px-6 py-2 border border-[#2c2b2b] rounded hover:bg-[#2c2b2b] hover:text-white transition flex items-center">
+          <a href="/Contact" className="bg-white text-[black] px-6 py-2 rounded hover:bg-[#A8D300] hover:text-black transition">Hire Me</a>
+          <a href="/Miss-Itunuoluwa-Adekunle-FlowCV-Resume-20241002.pdf" download className="bg-[#A8D300] text-black px-6 py-2 border border-[#2c2b2b] rounded hover:bg-[#2c2b2b] hover:text-white transition flex items-center">
             Resume <FontAwesomeIcon icon={faDownload} className="ml-2" />
           </a>
         </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
       <div className="hidden lg:block lg:w-1/2 mt-10 lg:mt-0 relative flex justify-center items-center" data-aos="fade-left">
         <div className="absolute -right-20 -top-24 z-0" aria-hidden="true">
           <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="responsive-svg">
-            <path d="M200 0C300 0 400 100 400 200C400 300 300 400 200 400C100 400 0 300 0 200C0 100 100 0 200 0Z" fill="#b8860b" opacity="0.5" />
+            <path d="M200 0C300 0 400 100 400 200C400 300 300 400 200 400C100 400 0 300 0 200C0 100 100 0 200 0Z" fill="gold" opacity="0.9" />
           </svg>
         </div>
         <div className="relative z-10 w-96 h-96 overflow-hidden rounded-full shadow-lg aspect-square ml-20"> 

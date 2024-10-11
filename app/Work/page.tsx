@@ -9,10 +9,10 @@ const WorkPage = () => {
   // Projects hosted on Vercel and Netlify
   const works = [
     {
-      title: 'Portfolio Website',
-      description: 'A personal portfolio to showcase my skills and projects.',
-      liveUrl: 'https://portfolio-g9hn.vercel.app',
-      imageUrl: 'https://i.postimg.cc/fbT1SYBp/portfolio-img.png',
+      title: 'Healthcare Website',
+      description: 'A website aims to help users find, export, and share hospitals within the region.',
+      liveUrl: 'https://carefinder-medease.vercel.app',
+      imageUrl: 'https://i.postimg.cc/15NLZLsX/Medease.png',
       platform: 'Vercel',
     },
     {
@@ -23,10 +23,10 @@ const WorkPage = () => {
       platform: 'Vercel',
     },
     {
-      title: 'Healthcare Website',
-      description: 'A website aims to help users find, export, and share hospitals within the region.',
-      liveUrl: 'https://carefinder-medease.vercel.app',
-      imageUrl: 'https://i.postimg.cc/15NLZLsX/Medease.png',
+      title: 'Portfolio Website',
+      description: 'A personal portfolio to showcase my skills and projects.',
+      liveUrl: 'https://portfolio-g9hn.vercel.app',
+      imageUrl: 'https://i.postimg.cc/fbT1SYBp/portfolio-img.png',
       platform: 'Vercel',
     },
     {
@@ -113,7 +113,7 @@ const WorkPage = () => {
         <div className="text-center mt-8" data-aos="zoom-in">
           <button
             onClick={() => setShowMore(!showMore)}
-            className="bg-white text-black px-4 py-2 rounded hover:bg-[#dfbd67] transition"
+            className="bg-white text-black px-4 py-2 rounded hover:bg-[#899a46] hover:text-white transition"
           >
             {showMore ? 'See Less' : 'See More'}
           </button>

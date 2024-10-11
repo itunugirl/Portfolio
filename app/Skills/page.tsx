@@ -41,7 +41,7 @@ const SkillsPage = () => {
     return (
       <div className="w-full bg-gray-300 rounded-full h-3">
         <div
-          className="bg-yellow-500 h-3 rounded-full transition-all duration-700 progress-bar"
+          className="bg-[#A8D300] h-3 rounded-full transition-all duration-700 progress-bar"
           style={{ width: `${rating}%` }}
         ></div>
       </div>

@@ -45,7 +45,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 w-full font-libre-baskerville p-4 shadow bg-gradient-to-b from-gray-900 to-gray-800 bg-opacity-30 z-10 transition-all duration-300 ${activeSection === 'home' ? 'bg-opacity-100' : 'bg-opacity-80'}`}>
       <div className="mx-auto flex justify-between items-center max-w-full px-4">
         <Link href="/" className="font-Libre-Baskerville text-white text-lg font-bold">
-          ADEKUNLE <span className='text-[gold]'>ITUNUOLUWA</span>
+          ADEKUNLE <span className='text-[#A8D300]'>ITUNUOLUWA</span>
         </Link>
         <div className="flex items-center">
           <button
@@ -76,7 +76,7 @@ const Navbar = () => {
               <Link
                 key={section}
                 href={`#${section}`}
-                className={`text-white font-Libre-Baskerville font-bold hover:text-[gold] ${activeSection === section ? 'text-[#dfbd67] underline' : ''}`} // underline for active section
+                className={`text-white font-Libre-Baskerville font-bold hover:text-[#A8D300] ${activeSection === section ? 'text-[gold] underline' : ''}`} // Update active and hover colors
               >
                 {section.toUpperCase()}
               </Link>
@@ -99,7 +99,7 @@ const Navbar = () => {
           <Link
             key={section}
             href={`#${section}`}
-            className={`text-black font-Libre-Baskerville font-bold hover:text-[#dfbd67] ${activeSection === section ? 'text-[gold] underline' : ''}`} // underline for active section
+            className={`text-black font-Libre-Baskerville font-bold hover:text-[#A8D300] ${activeSection === section ? 'text-[gold] underline' : ''}`} // Update active and hover colors
             onClick={() => setIsOpen(false)} // Close menu on link click
           >
             {section.toUpperCase()}
